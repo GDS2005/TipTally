@@ -1,56 +1,68 @@
-# React + TypeScript + Vite
+# Calculadora de Propinas - Proyecto React desde Cero
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **Calculadora de Propinas** desarrollada como parte de mi aprendizaje en el curso _"React desde cero"_.  
+El objetivo fue aplicar y consolidar los conceptos fundamentales de React, junto con herramientas modernas del ecosistema frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías Utilizadas
 
-## Expanding the ESLint configuration
+- **React** (Vite + TypeScript)
+- **TailwindCSS** para los estilos
+- **Custom Hooks** para lógica reutilizable
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Objetivos de Aprendizaje
+
+Durante el desarrollo de este proyecto puse en práctica:
+
+- Creación de un proyecto desde cero usando Vite con soporte para TypeScript.
+- Diseño de interfaces responsivas y modernas usando TailwindCSS.
+- Manejo de estados en React con `useState`.
+- Optimización de funciones con `useCallback` para evitar renders innecesarios.
+- Encapsulamiento de lógica mediante **Custom Hooks**.
+- Descomposición de la interfaz en **componentes reutilizables** y bien estructurados.
+
+---
+
+## Vista previa
+
+<img src="https://github.com/GDS2005/TipTally/public/preview.png" alt="project-preview" width="600"/>
+
+---
+
+## Instalación y ejecución del proyecto
+
+Sigue los siguientes pasos para ejecutar el proyecto localmente:
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/GDS2005/TipTally.git
+cd TipTally
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Instalar dependencias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+### 3. Ejecutar el proyecto en modo desarrollo
+
+```bash
+npm run dev
+```
+
+### 4. Desplegar proyecto para prueba.
+
+```bash
+npm run build
+```
+
+Subir la carpeta "dist" a https://www.netlify.com/ 
+
+
 
 
