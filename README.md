@@ -28,7 +28,7 @@ Durante el desarrollo de este proyecto puse en práctica:
 
 ## Vista previa
 
-<img src="https://github.com/GDS2005/TipTally/public/preview.png" alt="project-preview" width="600"/>
+<img src="https://github.com/GDS2005/TipTally/blob/main/public/preview.png" alt="project-preview" width="600"/>
 
 ---
 
